@@ -1,0 +1,10 @@
+  "name": "angular-bootstrap-inputs",
+  "description": "Bootstrap form inputs for AngularJS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/csolg/angular-bootstrap-inputs",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "angular": "~1.4.0"
+  }
+}

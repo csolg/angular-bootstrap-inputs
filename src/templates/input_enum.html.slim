@@ -1,0 +1,9 @@
+.form-group.enum.required
+  label.enum.required.col-sm-3.control-label for="{{elementId}}"
+    abbr title="required"  *
+    '
+    | {{ dtLabel }}
+  .col-sm-9
+    select.enum.required.form-control.form-control id="{{elementId}}" ng-model="dtModel"
+      option[ng-repeat="option in options" value="{{option.value}}"]
+        | {{ option.label }}

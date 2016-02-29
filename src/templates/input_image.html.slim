@@ -1,0 +1,13 @@
+.form-group.image[ng-class="{ required: required, 'has-error': (form.$submitted || form[elementId].$touched) && form[elementId].$invalid }"]
+  label.text-right.col-md-2.control-label for="{{elementId}}"
+    abbr[title="required" ng-if="required"] *
+    '
+    | {{ label }}
+  .col-md-10
+    img[ng-src="{{ field.value() }}" width="50%"]
+    br
+    br
+    input[type="file" id="{{elementId}}" name="{{elementId}}" ng-required="required"]
+    .error-messages[ng-show="form.$submitted || form[elementId].$touched"]
+      span.help-block[ng-show="form[elementId].$error.required"]
+        | Please, upload a photo

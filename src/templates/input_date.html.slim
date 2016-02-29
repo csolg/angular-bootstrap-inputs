@@ -1,0 +1,12 @@
+.form-group.date.required
+  label.date.required.col-sm-3.control-label for="{{elementId}}-day"
+    abbr title="required"  *
+    '
+    | {{ dtLabel }}
+  .col-sm-9
+    select.day.required[id="{{elementId}}-day" ng-model="day"]
+      option[ng-repeat="day in days" value="{day}"] {{day}}
+    select.month.required[id="{{elementId}}-month" ng-model="month"]
+      option[ng-repeat="month in monthes" value="{month.value}"] {{month.label}}
+    select.year.required[id="{{elementId}}-year" ng-model="year"]
+      option[ng-repeat="year in years" value="{year}"] {{year}}
