@@ -1,11 +1,11 @@
-
 .form-group.string[ng-class="{ required: required, 'has-error': (form.$submitted || form[elementId].$touched) && form[elementId].$invalid }"]
   label.text-right.col-md-2.control-label for="{{elementId}}"
     abbr[title="required" ng-if="required"] *
     '
     | {{ label }}
   .col-md-10
-    input.form-control[id="{{elementId}}" name="{{elementId}}" ng-required="required" type="text" ng-model-options="{ getterSetter: true }" ng-model="field.value"]
+    input[type="hidden" ng-model-options="{ getterSetter: true }" ng-model="model"]
+    .map[id="{{ mapId }}" style="height:278px;width:100%"]
     .error-messages[ng-show="form.$submitted || form[elementId].$touched"]
       span.help-block[ng-show="form[elementId].$error.required"]
         | Please, fill the field

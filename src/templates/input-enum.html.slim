@@ -4,6 +4,6 @@
     '
     | {{ dtLabel }}
   .col-sm-9
-    select.enum.required.form-control.form-control id="{{elementId}}" ng-model="dtModel"
+    select.enum.required.form-control.form-control id="{{elementId}}" ng-model="model"
       option[ng-repeat="option in options" value="{{option.value}}"]
         | {{ option.label }}

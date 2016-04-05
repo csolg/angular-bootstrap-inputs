@@ -1,2 +1,2 @@
 # angular-bootstrap-inputs
-Bootstrap form inputs for AngularJS
+Bootstrap form inputs for AngularJS (Beta)

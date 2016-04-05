@@ -3,9 +3,9 @@ angular
   .directive 'inputEnum', ()->
     {
       strict: 'E'
-      templateUrl: 'templates/input_enum.html'
+      templateUrl: 'templates/input-enum.html'
       scope: {
-        dtModel: '='
+        model: '='
       }
       replace: true
       link: (scope, element, attrs)->
@@ -22,9 +22,9 @@ angular
     {
       require: '^form'
       strict: 'E'
-      templateUrl: 'templates/input_string.html'
+      templateUrl: 'templates/input-string.html'
       scope: {
-        field: '='
+        model: '='
       }
       replace: true
       link: (scope, element, attrs, form)->
@@ -38,9 +38,9 @@ angular
     {
       require: '^form'
       strict: 'E'
-      templateUrl: 'templates/input_hidden.html'
+      templateUrl: 'templates/input-hidden.html'
       scope: {
-        field: '='
+        model: '='
       }
       replace: true
       link: (scope, element, attrs, form)->
@@ -53,9 +53,9 @@ angular
     {
       require: '^form'
       strict: 'E'
-      templateUrl: 'templates/input_map.html'
+      templateUrl: 'templates/input-map.html'
       scope: {
-        field: '='
+        model: '='
       }
       replace: true
       link: (scope, element, attrs, form)->
@@ -92,7 +92,7 @@ angular
     {
       require: '^form'
       strict: 'E'
-      templateUrl: 'templates/input_text.html'
+      templateUrl: 'templates/input-text.html'
       scope: {
         model: '='
       }
@@ -107,9 +107,9 @@ angular
   .directive 'inputDate', ()->
     {
       strict: 'E'
-      templateUrl: 'templates/input_date.html'
+      templateUrl: 'templates/input-date.html'
       scope: {
-        dtModel: '='
+        model: '='
       }
       replace: true
       link: (scope, element, attrs)->
@@ -133,7 +133,7 @@ angular
     {
       require: '^form'
       strict: 'E'
-      templateUrl: 'templates/input_integer.html'
+      templateUrl: 'templates/input-integer.html'
       scope:
         model: '='
       replace: true
@@ -148,7 +148,7 @@ angular
     {
       require: '^form'
       strict: 'E'
-      templateUrl: 'templates/input_select.html'
+      templateUrl: 'templates/input-select.html'
       scope: {
         model: '='
       }
@@ -165,9 +165,9 @@ angular
     {
       require: '^form'
       strict: 'E'
-      templateUrl: 'templates/input_image.html'
+      templateUrl: 'templates/input-image.html'
       scope:
-        field: '='
+        model: '='
       replace: true
       link: (scope, element, attrs, form)->
         scope.form = form
@@ -190,7 +190,7 @@ angular
     {
       require: '^form'
       strict: 'E'
-      templateUrl: 'templates/input_time.html'
+      templateUrl: 'templates/input-time.html'
       scope:
         model: '='
       replace: true

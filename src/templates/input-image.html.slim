@@ -4,7 +4,7 @@
     '
     | {{ label }}
   .col-md-10
-    img[ng-src="{{ field.value() }}" width="50%"]
+    img[ng-src="{{ model.value() }}" width="50%"]
     br
     br
     input[type="file" id="{{elementId}}" name="{{elementId}}" ng-required="required"]
